@@ -210,28 +210,28 @@
                 <form action="" class="contact-form">
                     <div class="form-1st-row">
                         <div class="first-name">
-                            <p>Frist name</p>
-                            <input type="text">
+                            <p id="firstname-label">Frist name</p>
+                            <input type="text" aria-labelledby="firstname-label">
                         </div>
                         <div class="last-name">
-                            <p>Last name</p>
-                            <input type="text">
+                            <p id="lastname-label" >Last name</p>
+                            <input type="text"aria-labelledby="lastname-label">
                         </div>
                     </div>
                     <div class="form-2nd-row">
                         <div>
-                            <p>Email</p>
-                            <input type="text">
+                            <p id="email-label">Email</p>
+                            <input type="text" aria-labelledby="email-label">
                         </div>
                         <div>
-                            <p>Phone nubmer</p>
-                            <input type="text">
+                            <p id="phone-num-label">Phone nubmer</p>
+                            <input type="text" aria-labelledby="phone-num-label">
                         </div>
                     </div>
                     <div class="form-3rd-row">
                         <label for="topic-dropdown" class="input-label">Choose a topic</label>
                         <select name="topic-dropdown" id="">
-                            <option disabled selected>Select one...</option>
+                            <option disabled selected aria-disabled="true">Select one...</option>
                         </select>
                     </div>
                     <div class="form-4th-row">

@@ -81,7 +81,7 @@ nav a{
     font-size: 1.3rem;
     border: 2px solid var(--primary-color);
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 1em 1em;
 }
 
@@ -405,7 +405,7 @@ textarea {
     color: white;
     font-size: 2rem;
     background-color: var(--primary-color);
-    padding: 1em 1em;
+    padding: 1em 1.5em;
     border-radius: 15px;
 }
 

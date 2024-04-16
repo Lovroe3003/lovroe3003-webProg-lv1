@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+    --primary-color: #5e3bee;
+    --heading-color: #282938;
+    --accent-color: #f5fcff;
+    --pink-color: #e62872;
+    --text-color: #1c1e53;
+
+    --font-size-h1:74px;
+    --font-size-h2:50px;
+    --font-size-h3: 35px;
+    --font-size-text1: 21.33px;
+    --font-size-body: 25px;
+  }
+
+html{
+    scroll-behavior: smooth;
+    background: white;
+}
+
+body {
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: var(--font-size-body);
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    border: 2px solid var(--primary-color);
+    background-color: #fff;
+    padding: 1em 1em;
+    border-radius: 15px;
+}
+  
+button a {
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+/* NAVIGACIJA */
+header img{
+    scale: 67%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav{
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a{
+    padding-left: 1rem; /* 1rem = 16px ako je to root velicina*/
+    padding-right: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: var(--font-size-text1);
+}
+
+.home-nav{
+    color:var(--primary-color);
+}
+
+.contactme-btn{
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    border: 2px solid var(--primary-color);
+    background-color: white;
+    border-radius: 5px;
+    padding: 1em 1em;
+}
+
+
+/* INTRO DIO SA SLIKOM LIKA  */
+.header-intro{
+    background-color: var(--accent-color);
+}
+.text{
+    font-size: 1.2rem;
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    /* BG Shade */
+    background: var(--accent-color);
+
+    padding-top: 5%;
+    padding-bottom: 5.5%;
+    margin-left: 9%;
+    margin-right: 5%;
+}
+.intro-btn {
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.3rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.intro-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+.intro-content {
+    flex: 1;
+}
+.intro-content h1 {
+    margin-bottom: 0;
+    font-size: var();
+}
+.h3-header{
+    font-size: 21.33px;
+    font-weight: 500;
+}
+.h1-header{
+    font-size: var(--font-size-h1);
+}
+.p-header{
+    font-size: 24px;
+    font-weight: 300;
+}
+.intro-purple{
+    color: var(--primary-color);
+}
+.intro-img {
+    object-fit: contain;
+    max-width: 90%;
+}
+
+/* My skills dio*/
+.skill-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+}
+.my-skills-container{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.my-skills-container h1{
+    margin-bottom: 3rem;
+    font-size: var(--font-size-h1);
+}
+.skill-card{
+    background-color: var(--accent-color);
+    margin: 1rem;
+    border-radius: 10px;
+    width: 90%;
+}
+.skill-card h2{
+    margin-top: 1.1rem;
+    padding: 0rem 2rem 0rem 2rem;
+}
+.skill-card p{
+    padding: 1.4rem 2rem 2rem 2rem;
+}
+.skill-holder img{
+    scale: 0.6;
+    background-color: white;
+    padding: 0.6rem;
+    border-radius: 10px;
+}
+
+/* ABOUT ME dio */
+.about-me-content {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+  
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.about-me-img img {
+    width: 90%;
+    height: 90%;
+}
+.about-me-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+.about-me-text {
+    flex: 1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+/* MY PORTFOLIO dio */
+
+.my-portfolio {
+    margin-top: 8rem;
+    margin-left: 4rem;
+    margin-bottom: 8rem;
+    margin-right: 4rem;
+}
+.my-portfolio-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.recent-projects-header h1 {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.397);
+    border: none;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+.card-text {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.card-text p {
+    font-size: 1.5rem;
+}
+.portfolio-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+.view-btn {
+    padding-top: 0.3rem;
+    font-size: 1.3rem;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 600;
+}
+.vector {
+    padding-left: 0.5rem;
+}
+.dribble-btn {
+    background-color: var(--pink-color);
+    color: white;
+    border: 1px solid var(--pink-color);
+    width: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    object-fit: contain;
+}
+.dribble-img {
+    width: 15%;
+}
+.dribble-text {
+    font-size: 1.4rem;
+}
+
+/* TESTIMONIALS*/
+.testimonials-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+.testimonials {
+    background-color: var(--accent-color);
+    padding-top: 10rem;
+    margin-top: 8rem;
+    padding-bottom: 10rem;
+}
+.testimonials-content {
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+.customer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+}
+.customer-card {
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 3px solid #006b6a;
+}
+.avatar-image {
+    width: 8rem;
+    height: 8rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+}
+.star-image {
+    width: 30%;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+.text {
+    padding-top: 1.5rem;
+}
+.text p {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+}
+
+/* CONTACT ME dio */
+.contact-container {
+    padding-top: 10rem;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+}
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-header h2 {
+    margin: 0;
+}
+.contact-form input, 
+textarea {
+    font-size: var(--font-size-h3);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+}
+.form-1st-row, 
+.form-2nd-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.form-3rd-row, 
+.form-4th-row{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+.checkbox-div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+#terms-checkbox{
+    scale: 1.6;
+    margin-right: 1.5rem;
+}
+.input-label{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+select {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+textarea {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.submit-button {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    padding: 1em 1em;
+    border-radius: 15px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--accent-color);
+    margin-bottom: 5rem;
+}
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+}
+.links img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+}
+.logo{
+    scale: 70%;
+}
+.footer-nav-links a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+.legal-stuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 1rem;
+}
+.legal-stuff p{
+    margin-left: 3rem;
+}
+.legal-links a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.footer hr {
+    width: 93%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+.skill-holder,
+.header-content,
+.about-me-content,
+.portfolio-cards,
+.testimonials-cards,
+.form-1st-row,
+.form-2nd-row,
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-me-img img {
+    width: 70%;
+    height: 70%;
+    content: url("img/About Me-1.png");
+}
+.card {
+    width: 60%;
+    height: 60%;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav a {
+    margin-top: 0.3rem;
+}
+header button {
+    margin-top: 1rem;
+    scale: 0.7;
+}
+.intro-img {
+    object-fit: contain;
+    max-width: 70%;
+}
+}
+@media only screen and (max-width: 700px) {
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+}
